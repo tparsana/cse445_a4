@@ -16,34 +16,31 @@ namespace ConsoleApp1
 {
     public class Program
     {
-        // Q1.1, Q1.2, Q1.3 -> put your actual GitHub links here:
-        // Example: https://tparsana.github.io/cse445_a4/Hotels.xml
-        public static string xmlURL = "https://tparsana.github.io/cse445_a4/Hotels.xml";
-        public static string xmlErrorURL = "https://tparsana.github.io/cse445_a4/HotelsErrors.xml";
+        // Q1.1, Q1.2, Q1.3 -> Updated with your GitHub Pages links
+        public static string xmlURL = "https://tparsana.github.io/cse445_a4/Hotels.xml";        // 10 hotels
+        public static string xmlErrorURL = "https://tparsana.github.io/cse445_a4/HotelsErrors.xml"; 
         public static string xsdURL = "https://tparsana.github.io/cse445_a4/Hotels.xsd";
 
         public static void Main(string[] args)
         {
-            // Q3.1: Validate correct XML
+            // Q3 (1): Validate correct XML
             string result = Verification(xmlURL, xsdURL);
-            Console.WriteLine(result); 
-            
-            // Q3.2: Validate error XML
+            Console.WriteLine(result);  // "No Error" if valid
+
+            // Q3 (2): Validate error XML
             result = Verification(xmlErrorURL, xsdURL);
-            Console.WriteLine(result);
-            
-            // Q3.3: Convert correct XML to JSON
-            // Note: The doc says "result = Xml2Json('Hotels.xml')" but it's safer to use the full URL.
+            Console.WriteLine(result);  // Should list the 5 mutations
+
+            // Q3 (3): Convert correct XML to JSON
             result = Xml2Json(xmlURL);
             Console.WriteLine(result);
         }
 
-        // Q2.1: Validate XML vs. XSD
+        // Q2.1 - Validates the XML file against the XSD
         public static string Verification(string xmlUrl, string xsdUrl)
         {
             try
             {
-                // Setup validation
                 XmlReaderSettings settings = new XmlReaderSettings
                 {
                     DtdProcessing = DtdProcessing.Ignore,
@@ -58,7 +55,7 @@ namespace ConsoleApp1
                     errors += $"Line {e.Exception.LineNumber}, Pos {e.Exception.LinePosition}: {e.Message}\n";
                 };
 
-                // Force reading entire doc
+                // Read entire document for validation
                 using (XmlReader reader = XmlReader.Create(xmlUrl, settings))
                 {
                     while (reader.Read()) { }
@@ -72,38 +69,39 @@ namespace ConsoleApp1
             }
         }
 
-        // Q2.2: Convert valid XML to JSON
+        // Q2.2 - Converts valid XML into JSON
         public static string Xml2Json(string xmlUrl)
         {
             try
             {
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(xmlUrl);
                 request.Method = "GET";
+
                 using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                 using (Stream stream = response.GetResponseStream())
                 using (StreamReader reader = new StreamReader(stream))
                 {
-                    // Fetch raw XML
                     string xmlContent = reader.ReadToEnd();
-                    
-                    // Escape invalid ampersands if needed
+
+                    // Fix unescaped '&' or other invalid entity references
                     xmlContent = Regex.Replace(xmlContent, "&(?!amp;|lt;|gt;|quot;|apos;|#\\d+;)", "&amp;");
-                    
+
+                    // Load into XmlDocument
                     XmlDocument doc = new XmlDocument();
                     XmlReaderSettings rdSettings = new XmlReaderSettings
                     {
                         DtdProcessing = DtdProcessing.Ignore,
                         XmlResolver = null
                     };
+
                     using (StringReader sr = new StringReader(xmlContent))
                     using (XmlReader xmlReader = XmlReader.Create(sr, rdSettings))
                     {
                         doc.Load(xmlReader);
                     }
-                    
-                    // Convert to JSON; third param = true => attributes become @attributes
-                    string jsonText = JsonConvert.SerializeXmlNode(doc, Formatting.Indented, true);
 
+                    // Convert to JSON. Third param 'true' => attributes appear as '@hotelID', etc.
+                    string jsonText = JsonConvert.SerializeXmlNode(doc, Formatting.Indented, true);
                     return jsonText;
                 }
             }
