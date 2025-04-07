@@ -4,7 +4,7 @@
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearestAirport="Sky Harbor">
+    <Address NearstAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
@@ -15,7 +15,7 @@
   <Hotel HotelID="H002" Rating="3.8">
     <Name>Hyatt Regency</Name>
     <Phone>480-123-4567</Phone>
-    <Address NearestAirport="Phoenix Sky Harbor">
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>100</Number>
       <Street>Main St</Street>
       <City>Phoenix</City>
@@ -38,7 +38,7 @@
   <Hotel HotelID="H004" Rating="4.5">
     <Name>Hilton</Name>
     <Phone>480-555-0200</Phone>
-    <Address NearestAirport="Mesa Gateway">
+    <Address NearstAirport="Mesa Gateway">
       <Number>300</Number>
       <Street>Sunset Blvd</Street>
       <City>Mesa</City>
@@ -49,7 +49,7 @@
   <Hotel HotelID="H005" Rating="4.0">
     <Name>Renaissance</Name>
     <Phone>480-555-0300</Phone>
-    <Address NearestAirport="Scottsdale Airport">
+    <Address NearstAirport="Scottsdale Airport">
       <Number>400</Number>
       <Street>Broadway</Street>
       <City>Scottsdale</City>
@@ -71,7 +71,7 @@
   <Hotel HotelID="H007" Rating="3.5">
     <Name>Comfort Inn</Name>
     <Phone>480-555-0500</Phone>
-    <Address NearestAirport="Phoenix Sky Harbor">
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>600</Number>
       <Street>Lincoln St</Street>
       <City>Chandler</City>
@@ -83,7 +83,7 @@
     <Name>Holiday Inn</Name>
     <Phone>480-555-0600</Phone>
     <Phone>480-555-0601</Phone>
-    <Address NearestAirport="Phoenix Sky Harbor">
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>700</Number>
       <Street>Jefferson Ave</Street>
       <City>Tempe</City>
@@ -94,7 +94,7 @@
   <Hotel HotelID="H009" Rating="3.9">
     <Name>DoubleTree</Name>
     <Phone>480-555-0700</Phone>
-    <Address NearestAirport="Phoenix Sky Harbor">
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>800</Number>
       <Street>Washington Blvd</Street>
       <City>Phoenix</City>
