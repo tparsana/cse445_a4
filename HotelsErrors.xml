@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- (1) Wrong root element name: <Hotel> instead of <Hotels> -->
-<Hotel>
-  <!-- Hotel #1 (valid) -->
-  <Hotel hotelID="H001" NearstAirport="Sky Harbor" Rating="4.2">
+<?xml version="1.0" encoding="utf-8"?>
+<Hotel>  <!-- Error 1: Wrong root element -->
+  <Hotel HotelID="H001" Rating="4.2">
+    <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Name>Westin</Name>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
@@ -14,122 +12,108 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-
-  <!-- Hotel #2 (valid) -->
-  <Hotel hotelID="H002" NearstAirport="Phoenix Intl">
-    <Phone>602-111-1234</Phone>
-    <Name>Hilton</Name>
-    <Address>
+  <Hotel Rating="3.8">  <!-- Error 2: Missing required attribute HotelID -->
+    <Name>Hyatt Regency</Name>
+    <Phone>480-123-4567</Phone>
+    <Address NearestAirport="Phoenix Sky Harbor">
       <Number>100</Number>
-      <Street>N Mill Ave</Street>
+      <Street>Main St</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-
-  <!-- Hotel #3: (2) MISSING required attribute `NearstAirport` -->
-  <Hotel hotelID="H003" Rating="3.8">
-    <Phone>480-555-9876</Phone>
+  <Hotel HotelID="H003">
     <Name>Marriott</Name>
+    <!-- Error 3: Missing Phone element -->
     <Address>
       <Number>200</Number>
-      <Street>W Broadway Rd</Street>
-      <City>Mesa</City>
-      <State>AZ</State>
-      <Zip>85201</Zip>
-    </Address>
-  </Hotel>
-
-  <!-- Hotel #4: (3) No <Phone> elements -->
-  <Hotel hotelID="H004" NearstAirport="Tucson Intl" Rating="4.0">
-    <Name>Sheraton</Name>
-    <Address>
-      <Number>500</Number>
-      <Street>S Congress St</Street>
+      <Street>Central Ave</Street>
       <City>Tucson</City>
       <State>AZ</State>
       <Zip>85701</Zip>
     </Address>
   </Hotel>
-
-  <!-- Hotel #5 (valid) -->
-  <Hotel hotelID="H005" NearstAirport="Chandler Airport">
-    <Phone>888-123-4567</Phone>
-    <Name>MotelSix</Name>
+  <Hotel HotelID="H004" Rating="4.5">
+    <Name>Hilton</Name>
+    <Phone>480-555-0200</Phone>
+    <!-- Error 4: Address element missing closing tag -->
+    <Address NearestAirport="Mesa Gateway">
+      <Number>300</Number>
+      <Street>Sunset Blvd</Street>
+      <City>Mesa</City>
+      <State>AZ</State>
+      <Zip>85201</Zip>
+    <!-- Missing </Address> -->
+  </Hotel>
+  <Hotel HotelID="H005" Rating="4.0">
+    <!-- Error 5: Two Name elements provided -->
+    <Name>Renaissance</Name>
+    <Name>Extra Name</Name>
+    <Phone>480-555-0300</Phone>
+    <Address NearestAirport="Scottsdale Airport">
+      <Number>400</Number>
+      <Street>Broadway</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+    </Address>
+  </Hotel>
+  <!-- The remaining hotels are copied normally -->
+  <Hotel HotelID="H006">
+    <Name>Best Western</Name>
+    <Phone>480-555-0400</Phone>
     <Address>
-      <Number>1900</Number>
-      <Street>W 12th St</Street>
+      <Number>500</Number>
+      <Street>Market St</Street>
+      <City>Glendale</City>
+      <State>AZ</State>
+      <Zip>85301</Zip>
+    </Address>
+  </Hotel>
+  <Hotel HotelID="H007" Rating="3.5">
+    <Name>Comfort Inn</Name>
+    <Phone>480-555-0500</Phone>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>600</Number>
+      <Street>Lincoln St</Street>
       <City>Chandler</City>
       <State>AZ</State>
       <Zip>85225</Zip>
     </Address>
   </Hotel>
-
-  <!-- Hotel #6: (4) Missing closing tag for <Address> -->
-  <Hotel hotelID="H006" NearstAirport="Phoenix Sky Harbor" Rating="3.5">
-    <Phone>877-999-9999</Phone>
+  <Hotel HotelID="H008" Rating="4.1">
     <Name>Holiday Inn</Name>
-    <Address>
-      <Number>250</Number>
-      <Street>E Van Buren</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85006</Zip>
-    <!-- Missing </Address> -->
-  </Hotel>
-
-  <!-- Hotel #7 (valid) -->
-  <Hotel hotelID="H007" NearstAirport="Deer Valley">
-    <Phone>623-555-1111</Phone>
-    <Name>Travelodge</Name>
-    <Address>
-      <Number>333</Number>
-      <Street>N 27th Ave</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85029</Zip>
-    </Address>
-  </Hotel>
-
-  <!-- Hotel #8: (5) Two <Name> elements -->
-  <Hotel hotelID="H008" NearstAirport="Flagstaff Pulliam" Rating="4.1">
-    <Phone>928-444-1234</Phone>
-    <Name>Best Western</Name>
-    <Name>DuplicateName</Name>
-    <Address>
-      <Number>101</Number>
-      <Street>Historic Rte 66</Street>
-      <City>Flagstaff</City>
-      <State>AZ</State>
-      <Zip>86001</Zip>
-    </Address>
-  </Hotel>
-
-  <!-- Hotel #9 (valid) -->
-  <Hotel hotelID="H009" NearstAirport="Sky Harbor">
-    <Phone>480-777-9999</Phone>
-    <Phone>480-777-9998</Phone>
-    <Name>Desert Oasis</Name>
-    <Address>
-      <Number>777</Number>
-      <Street>E Greenway Pkwy</Street>
-      <City>Scottsdale</City>
-      <State>AZ</State>
-      <Zip>85254</Zip>
-    </Address>
-  </Hotel>
-
-  <!-- Hotel #10 (valid) -->
-  <Hotel hotelID="H010" NearstAirport="Tempe Municipal" Rating="3.9">
-    <Phone>480-541-1234</Phone>
-    <Name>Residence Inn</Name>
-    <Address>
-      <Number>4800</Number>
-      <Street>N Rural Rd</Street>
+    <Phone>480-555-0600</Phone>
+    <Phone>480-555-0601</Phone>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>700</Number>
+      <Street>Jefferson Ave</Street>
       <City>Tempe</City>
       <State>AZ</State>
-      <Zip>85282</Zip>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  <Hotel HotelID="H009" Rating="3.9">
+    <Name>DoubleTree</Name>
+    <Phone>480-555-0700</Phone>
+    <Address NearestAirport="Phoenix Sky Harbor">
+      <Number>800</Number>
+      <Street>Washington Blvd</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+  <Hotel HotelID="H010">
+    <Name>La Quinta</Name>
+    <Phone>480-555-0800</Phone>
+    <Address>
+      <Number>900</Number>
+      <Street>Grand Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
     </Address>
   </Hotel>
 </Hotel>
