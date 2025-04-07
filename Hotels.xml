@@ -1,135 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
+  <!-- Hotel #1 -->
   <Hotel hotelID="H001">
     <Name>Westin</Name>
-    <Rating>4.2</Rating>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearestAirport="Sky Harbor">
+    <Address NearstAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.2</Rating>
   </Hotel>
 
+  <!-- Hotel #2 -->
   <Hotel hotelID="H002">
     <Name>Hilton</Name>
-    <!-- Omit Rating to show it's optional -->
     <Phone>602-111-1234</Phone>
-    <Address>
+    <Address NearstAirport="Phoenix Intl">
       <Number>100</Number>
       <Street>N Mill Ave</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
+    <!-- Omit Rating (optional) -->
   </Hotel>
 
+  <!-- Hotel #3 -->
   <Hotel hotelID="H003">
     <Name>Marriott</Name>
-    <Rating>3.8</Rating>
     <Phone>480-555-9876</Phone>
-    <Address NearestAirport="Mesa Gateway">
+    <Address NearstAirport="Mesa Gateway">
       <Number>200</Number>
       <Street>W Broadway Rd</Street>
       <City>Mesa</City>
       <State>AZ</State>
       <Zip>85201</Zip>
     </Address>
+    <Rating>3.8</Rating>
   </Hotel>
 
+  <!-- Hotel #4 -->
   <Hotel hotelID="H004">
     <Name>Sheraton</Name>
-    <Rating>4.0</Rating>
     <Phone>888-777-0001</Phone>
     <Phone>888-777-0002</Phone>
-    <Address NearestAirport="Tucson Intl">
+    <Address NearstAirport="Tucson Intl">
       <Number>500</Number>
       <Street>S Congress St</Street>
       <City>Tucson</City>
       <State>AZ</State>
       <Zip>85701</Zip>
     </Address>
+    <Rating>4.0</Rating>
   </Hotel>
 
+  <!-- Hotel #5 -->
   <Hotel hotelID="H005">
     <Name>MotelSix</Name>
-    <!-- Rating omitted -->
     <Phone>888-123-4567</Phone>
-    <Address>
+    <Address NearstAirport="Chandler Airport">
       <Number>1900</Number>
       <Street>W 12th St</Street>
       <City>Chandler</City>
       <State>AZ</State>
       <Zip>85225</Zip>
     </Address>
+    <!-- Omit Rating -->
   </Hotel>
 
+  <!-- Hotel #6 -->
   <Hotel hotelID="H006">
     <Name>Holiday Inn</Name>
-    <Rating>3.5</Rating>
     <Phone>877-999-9999</Phone>
-    <Address>
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>250</Number>
       <Street>E Van Buren</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85006</Zip>
     </Address>
+    <Rating>3.5</Rating>
   </Hotel>
 
+  <!-- Hotel #7 -->
   <Hotel hotelID="H007">
     <Name>Travelodge</Name>
-    <!-- Rating omitted -->
     <Phone>623-555-1111</Phone>
-    <Address NearestAirport="Deer Valley">
+    <Address NearstAirport="Deer Valley">
       <Number>333</Number>
       <Street>N 27th Ave</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85029</Zip>
     </Address>
+    <!-- Omit Rating -->
   </Hotel>
 
+  <!-- Hotel #8 -->
   <Hotel hotelID="H008">
     <Name>Best Western</Name>
-    <Rating>4.1</Rating>
     <Phone>928-444-1234</Phone>
-    <Address>
+    <Address NearstAirport="Flagstaff Pulliam">
       <Number>101</Number>
       <Street>Historic Rte 66</Street>
       <City>Flagstaff</City>
       <State>AZ</State>
       <Zip>86001</Zip>
     </Address>
+    <Rating>4.1</Rating>
   </Hotel>
 
+  <!-- Hotel #9 -->
   <Hotel hotelID="H009">
     <Name>Desert Oasis</Name>
-    <!-- Omit rating -->
     <Phone>480-777-9999</Phone>
     <Phone>480-777-9998</Phone>
-    <Address NearestAirport="Sky Harbor">
+    <Address NearstAirport="Sky Harbor">
       <Number>777</Number>
       <Street>E Greenway Pkwy</Street>
       <City>Scottsdale</City>
       <State>AZ</State>
       <Zip>85254</Zip>
     </Address>
+    <!-- Omit Rating -->
   </Hotel>
 
+  <!-- Hotel #10 -->
   <Hotel hotelID="H010">
     <Name>Residence Inn</Name>
-    <Rating>3.9</Rating>
     <Phone>480-541-1234</Phone>
-    <Address>
+    <Address NearstAirport="Tempe Municipal">
       <Number>4800</Number>
       <Street>N Rural Rd</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85282</Zip>
     </Address>
+    <Rating>3.9</Rating>
   </Hotel>
+
 </Hotels>
