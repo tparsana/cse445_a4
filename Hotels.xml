@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotels>
+  <!-- First hotel has Rating and an Address with NearestAirport -->
+  <Hotel hotelID="H001">
+    <Name>Westin</Name>
+    <Rating>4.2</Rating>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Second hotel omits Rating and NearestAirport to show optional usage -->
+  <Hotel hotelID="H002">
+    <Name>Hilton</Name>
+    <Phone>602-555-1234</Phone>
+    <Address>
+      <Number>100</Number>
+      <Street>N Mill Ave</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Third hotel includes everything again -->
+  <Hotel hotelID="H003">
+    <Name>Marriott</Name>
+    <Rating>3.8</Rating>
+    <Phone>480-555-9876</Phone>
+    <Address NearestAirport="Mesa Gateway">
+      <Number>200</Number>
+      <Street>W Broadway Rd</Street>
+      <City>Mesa</City>
+      <State>AZ</State>
+      <Zip>85201</Zip>
+    </Address>
+  </Hotel>
+
+</Hotels>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (1) Root element name is 'Hotel' instead of 'Hotels' -->
+<Hotel>
+  <Hotel hotelID="H001">
+    <!-- (5) Two Name elements -->
+    <Name>Westin</Name>
+    <Name>DoubleTree</Name>
+    <Rating>4.2</Rating>
+    <Phone>480-968-8885</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel>
+    <!-- (2) Missing required attribute 'hotelID' -->
+    <Name>Hilton</Name>
+    <Rating>3.9</Rating>
+    <!-- (3) Missing Phone element entirely -->
+    <Address>
+      <Number>100</Number>
+      <Street>N Mill Ave</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel hotelID="H003">
+    <Name>Marriott</Name>
+    <Rating>3.8</Rating>
+    <Phone>480-555-9876</Phone>
+    <!-- (4) No closing tag for <Address> -->
+    <Address>
+      <Number>200</Number>
+      <Street>W Broadway Rd</Street>
+      <City>Mesa</City>
+      <State>AZ</State>
+      <!-- Missing </Zip> and </Address> -->
+  </Hotel>
+</Hotel>
