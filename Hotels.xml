@@ -1,146 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
-  <!-- Hotel #1 -->
-  <Hotel hotelID="H001">
-    <Name>Westin</Name>
+  <!-- 1) Has phones, rating, etc. -->
+  <Hotel hotelID="H001" NearstAirport="Sky Harbor" Rating="4.2">
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearstAirport="Sky Harbor">
+    <Name>Westin</Name>
+    <Address>
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <Rating>4.2</Rating>
   </Hotel>
 
-  <!-- Hotel #2 -->
-  <Hotel hotelID="H002">
-    <Name>Hilton</Name>
+  <!-- 2) Omit rating example -->
+  <Hotel hotelID="H002" NearstAirport="Phoenix Intl">
     <Phone>602-111-1234</Phone>
-    <Address NearstAirport="Phoenix Intl">
+    <Name>Hilton</Name>
+    <Address>
       <Number>100</Number>
       <Street>N Mill Ave</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
-    <!-- Omit Rating (optional) -->
   </Hotel>
 
-  <!-- Hotel #3 -->
-  <Hotel hotelID="H003">
-    <Name>Marriott</Name>
+  <!-- 3) Example with single phone, rating -->
+  <Hotel hotelID="H003" NearstAirport="Mesa Gateway" Rating="3.8">
     <Phone>480-555-9876</Phone>
-    <Address NearstAirport="Mesa Gateway">
+    <Name>Marriott</Name>
+    <Address>
       <Number>200</Number>
       <Street>W Broadway Rd</Street>
       <City>Mesa</City>
       <State>AZ</State>
       <Zip>85201</Zip>
     </Address>
-    <Rating>3.8</Rating>
   </Hotel>
 
-  <!-- Hotel #4 -->
-  <Hotel hotelID="H004">
-    <Name>Sheraton</Name>
+  <!-- 4) Multiple phones, rating -->
+  <Hotel hotelID="H004" NearstAirport="Tucson Intl" Rating="4.0">
     <Phone>888-777-0001</Phone>
     <Phone>888-777-0002</Phone>
-    <Address NearstAirport="Tucson Intl">
+    <Name>Sheraton</Name>
+    <Address>
       <Number>500</Number>
       <Street>S Congress St</Street>
       <City>Tucson</City>
       <State>AZ</State>
       <Zip>85701</Zip>
     </Address>
-    <Rating>4.0</Rating>
   </Hotel>
 
-  <!-- Hotel #5 -->
-  <Hotel hotelID="H005">
-    <Name>MotelSix</Name>
+  <!-- 5) Single phone, no rating -->
+  <Hotel hotelID="H005" NearstAirport="Chandler Airport">
     <Phone>888-123-4567</Phone>
-    <Address NearstAirport="Chandler Airport">
+    <Name>MotelSix</Name>
+    <Address>
       <Number>1900</Number>
       <Street>W 12th St</Street>
       <City>Chandler</City>
       <State>AZ</State>
       <Zip>85225</Zip>
     </Address>
-    <!-- Omit Rating -->
   </Hotel>
 
-  <!-- Hotel #6 -->
-  <Hotel hotelID="H006">
-    <Name>Holiday Inn</Name>
+  <!-- 6) rating 3.5 -->
+  <Hotel hotelID="H006" NearstAirport="Phoenix Sky Harbor" Rating="3.5">
     <Phone>877-999-9999</Phone>
-    <Address NearstAirport="Phoenix Sky Harbor">
+    <Name>Holiday Inn</Name>
+    <Address>
       <Number>250</Number>
       <Street>E Van Buren</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85006</Zip>
     </Address>
-    <Rating>3.5</Rating>
   </Hotel>
 
-  <!-- Hotel #7 -->
-  <Hotel hotelID="H007">
-    <Name>Travelodge</Name>
+  <!-- 7) Omit rating -->
+  <Hotel hotelID="H007" NearstAirport="Deer Valley">
     <Phone>623-555-1111</Phone>
-    <Address NearstAirport="Deer Valley">
+    <Name>Travelodge</Name>
+    <Address>
       <Number>333</Number>
       <Street>N 27th Ave</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85029</Zip>
     </Address>
-    <!-- Omit Rating -->
   </Hotel>
 
-  <!-- Hotel #8 -->
-  <Hotel hotelID="H008">
-    <Name>Best Western</Name>
+  <!-- 8) rating 4.1 -->
+  <Hotel hotelID="H008" NearstAirport="Flagstaff Pulliam" Rating="4.1">
     <Phone>928-444-1234</Phone>
-    <Address NearstAirport="Flagstaff Pulliam">
+    <Name>Best Western</Name>
+    <Address>
       <Number>101</Number>
       <Street>Historic Rte 66</Street>
       <City>Flagstaff</City>
       <State>AZ</State>
       <Zip>86001</Zip>
     </Address>
-    <Rating>4.1</Rating>
   </Hotel>
 
-  <!-- Hotel #9 -->
-  <Hotel hotelID="H009">
-    <Name>Desert Oasis</Name>
+  <!-- 9) multiple phone, no rating -->
+  <Hotel hotelID="H009" NearstAirport="Sky Harbor">
     <Phone>480-777-9999</Phone>
     <Phone>480-777-9998</Phone>
-    <Address NearstAirport="Sky Harbor">
+    <Name>Desert Oasis</Name>
+    <Address>
       <Number>777</Number>
       <Street>E Greenway Pkwy</Street>
       <City>Scottsdale</City>
       <State>AZ</State>
       <Zip>85254</Zip>
     </Address>
-    <!-- Omit Rating -->
   </Hotel>
 
-  <!-- Hotel #10 -->
-  <Hotel hotelID="H010">
-    <Name>Residence Inn</Name>
+  <!-- 10) rating 3.9 -->
+  <Hotel hotelID="H010" NearstAirport="Tempe Municipal" Rating="3.9">
     <Phone>480-541-1234</Phone>
-    <Address NearstAirport="Tempe Municipal">
+    <Name>Residence Inn</Name>
+    <Address>
       <Number>4800</Number>
       <Street>N Rural Rd</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85282</Zip>
     </Address>
-    <Rating>3.9</Rating>
   </Hotel>
-
 </Hotels>

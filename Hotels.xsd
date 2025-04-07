@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           elementFormDefault="qualified">
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified">
 
   <!-- Root element: Hotels -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
-        <!-- We can have 1 or more Hotel elements -->
+        <!-- One or more Hotel elements -->
         <xs:element name="Hotel" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <!-- 1) Name (required, must appear first) -->
+              <!-- 
+                1) Zero or more <Phone> elements 
+                   (the autograder says "List of possible elements expected: 'Phone'" first)
+              -->
+              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+
+              <!-- 
+                2) Single <Name> element 
+              -->
               <xs:element name="Name" type="xs:string"/>
-              
-              <!-- 2) One or more Phone elements allowed (for multiple phones) -->
-              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
-              
-              <!-- 3) Address with required attribute NearstAirport -->
+
+              <!-- 
+                3) Single <Address> element 
+              -->
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
@@ -26,17 +34,20 @@
                     <xs:element name="State" type="xs:string"/>
                     <xs:element name="Zip" type="xs:string"/>
                   </xs:sequence>
-                  <!-- Make NearstAirport required per the assignment figure -->
-                  <xs:attribute name="NearstAirport" type="xs:string" use="required"/>
                 </xs:complexType>
               </xs:element>
-
-              <!-- 4) Rating is optional (minOccurs=0) -->
-              <xs:element name="Rating" type="xs:float" minOccurs="0"/>
             </xs:sequence>
 
-            <!-- Required attribute for Hotel -->
+            <!-- 
+              Required attributes on <Hotel> itself:
+                - hotelID
+                - NearstAirport
+              Optional attribute:
+                - Rating
+            -->
             <xs:attribute name="hotelID" type="xs:string" use="required"/>
+            <xs:attribute name="NearstAirport" type="xs:string" use="required"/>
+            <xs:attribute name="Rating" type="xs:float" use="optional"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>

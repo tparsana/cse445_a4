@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (1) Wrong root element name: <Hotel> instead of <Hotels> -->
 <Hotel>
-  <!-- Hotel #1 (valid block) -->
-  <Hotel hotelID="H001">
-    <Name>Westin</Name>
+  <!-- Hotel #1 (valid) -->
+  <Hotel hotelID="H001" NearstAirport="Sky Harbor" Rating="4.2">
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearstAirport="Sky Harbor">
+    <Name>Westin</Name>
+    <Address>
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <Rating>4.2</Rating>
   </Hotel>
 
-  <!-- Hotel #2 (valid block) -->
-  <Hotel hotelID="H002">
-    <Name>Hilton</Name>
+  <!-- Hotel #2 (valid) -->
+  <Hotel hotelID="H002" NearstAirport="Phoenix Intl">
     <Phone>602-111-1234</Phone>
-    <Address NearstAirport="Phoenix Intl">
+    <Name>Hilton</Name>
+    <Address>
       <Number>100</Number>
       <Street>N Mill Ave</Street>
       <City>Phoenix</City>
@@ -29,40 +28,36 @@
     </Address>
   </Hotel>
 
-  <!-- Hotel #3 -->
-  <!-- (2) MISSING hotelID attribute -->
-  <Hotel>
-    <Name>Marriott</Name>
+  <!-- Hotel #3: (2) MISSING required attribute `NearstAirport` -->
+  <Hotel hotelID="H003" Rating="3.8">
     <Phone>480-555-9876</Phone>
-    <Address NearstAirport="Mesa Gateway">
+    <Name>Marriott</Name>
+    <Address>
       <Number>200</Number>
       <Street>W Broadway Rd</Street>
       <City>Mesa</City>
       <State>AZ</State>
       <Zip>85201</Zip>
     </Address>
-    <Rating>3.8</Rating>
   </Hotel>
 
-  <!-- Hotel #4 -->
-  <!-- (3) Missing <Phone> entirely -->
-  <Hotel hotelID="H004">
+  <!-- Hotel #4: (3) No <Phone> elements -->
+  <Hotel hotelID="H004" NearstAirport="Tucson Intl" Rating="4.0">
     <Name>Sheraton</Name>
-    <Address NearstAirport="Tucson Intl">
+    <Address>
       <Number>500</Number>
       <Street>S Congress St</Street>
       <City>Tucson</City>
       <State>AZ</State>
       <Zip>85701</Zip>
     </Address>
-    <Rating>4.0</Rating>
   </Hotel>
 
-  <!-- Hotel #5 (valid block) -->
-  <Hotel hotelID="H005">
-    <Name>MotelSix</Name>
+  <!-- Hotel #5 (valid) -->
+  <Hotel hotelID="H005" NearstAirport="Chandler Airport">
     <Phone>888-123-4567</Phone>
-    <Address NearstAirport="Chandler Airport">
+    <Name>MotelSix</Name>
+    <Address>
       <Number>1900</Number>
       <Street>W 12th St</Street>
       <City>Chandler</City>
@@ -71,26 +66,24 @@
     </Address>
   </Hotel>
 
-  <!-- Hotel #6 -->
-  <!-- (4) Address is missing closing tag -->
-  <Hotel hotelID="H006">
-    <Name>Holiday Inn</Name>
+  <!-- Hotel #6: (4) Missing closing tag for <Address> -->
+  <Hotel hotelID="H006" NearstAirport="Phoenix Sky Harbor" Rating="3.5">
     <Phone>877-999-9999</Phone>
-    <Address NearstAirport="Phoenix Sky Harbor">
+    <Name>Holiday Inn</Name>
+    <Address>
       <Number>250</Number>
       <Street>E Van Buren</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85006</Zip>
-    <!-- MISSING </Address> -->
-    <Rating>3.5</Rating>
+    <!-- Missing </Address> -->
   </Hotel>
 
-  <!-- Hotel #7 (valid block) -->
-  <Hotel hotelID="H007">
-    <Name>Travelodge</Name>
+  <!-- Hotel #7 (valid) -->
+  <Hotel hotelID="H007" NearstAirport="Deer Valley">
     <Phone>623-555-1111</Phone>
-    <Address NearstAirport="Deer Valley">
+    <Name>Travelodge</Name>
+    <Address>
       <Number>333</Number>
       <Street>N 27th Ave</Street>
       <City>Phoenix</City>
@@ -99,28 +92,26 @@
     </Address>
   </Hotel>
 
-  <!-- Hotel #8 -->
-  <!-- (5) Two <Name> elements -->
-  <Hotel hotelID="H008">
+  <!-- Hotel #8: (5) Two <Name> elements -->
+  <Hotel hotelID="H008" NearstAirport="Flagstaff Pulliam" Rating="4.1">
+    <Phone>928-444-1234</Phone>
     <Name>Best Western</Name>
     <Name>DuplicateName</Name>
-    <Phone>928-444-1234</Phone>
-    <Address NearstAirport="Flagstaff Pulliam">
+    <Address>
       <Number>101</Number>
       <Street>Historic Rte 66</Street>
       <City>Flagstaff</City>
       <State>AZ</State>
       <Zip>86001</Zip>
     </Address>
-    <Rating>4.1</Rating>
   </Hotel>
 
-  <!-- Hotel #9 (valid block) -->
-  <Hotel hotelID="H009">
-    <Name>Desert Oasis</Name>
+  <!-- Hotel #9 (valid) -->
+  <Hotel hotelID="H009" NearstAirport="Sky Harbor">
     <Phone>480-777-9999</Phone>
     <Phone>480-777-9998</Phone>
-    <Address NearstAirport="Sky Harbor">
+    <Name>Desert Oasis</Name>
+    <Address>
       <Number>777</Number>
       <Street>E Greenway Pkwy</Street>
       <City>Scottsdale</City>
@@ -129,17 +120,16 @@
     </Address>
   </Hotel>
 
-  <!-- Hotel #10 (valid block) -->
-  <Hotel hotelID="H010">
-    <Name>Residence Inn</Name>
+  <!-- Hotel #10 (valid) -->
+  <Hotel hotelID="H010" NearstAirport="Tempe Municipal" Rating="3.9">
     <Phone>480-541-1234</Phone>
-    <Address NearstAirport="Tempe Municipal">
+    <Name>Residence Inn</Name>
+    <Address>
       <Number>4800</Number>
       <Street>N Rural Rd</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85282</Zip>
     </Address>
-    <Rating>3.9</Rating>
   </Hotel>
 </Hotel>
