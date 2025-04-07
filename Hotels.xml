@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
-  <!-- First hotel has Rating and an Address with NearestAirport -->
   <Hotel hotelID="H001">
     <Name>Westin</Name>
     <Rating>4.2</Rating>
@@ -15,10 +14,10 @@
     </Address>
   </Hotel>
 
-  <!-- Second hotel omits Rating and NearestAirport to show optional usage -->
   <Hotel hotelID="H002">
     <Name>Hilton</Name>
-    <Phone>602-555-1234</Phone>
+    <!-- Omit Rating to show it's optional -->
+    <Phone>602-111-1234</Phone>
     <Address>
       <Number>100</Number>
       <Street>N Mill Ave</Street>
@@ -28,7 +27,6 @@
     </Address>
   </Hotel>
 
-  <!-- Third hotel includes everything again -->
   <Hotel hotelID="H003">
     <Name>Marriott</Name>
     <Rating>3.8</Rating>
@@ -42,4 +40,96 @@
     </Address>
   </Hotel>
 
+  <Hotel hotelID="H004">
+    <Name>Sheraton</Name>
+    <Rating>4.0</Rating>
+    <Phone>888-777-0001</Phone>
+    <Phone>888-777-0002</Phone>
+    <Address NearestAirport="Tucson Intl">
+      <Number>500</Number>
+      <Street>S Congress St</Street>
+      <City>Tucson</City>
+      <State>AZ</State>
+      <Zip>85701</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel hotelID="H005">
+    <Name>MotelSix</Name>
+    <!-- Rating omitted -->
+    <Phone>888-123-4567</Phone>
+    <Address>
+      <Number>1900</Number>
+      <Street>W 12th St</Street>
+      <City>Chandler</City>
+      <State>AZ</State>
+      <Zip>85225</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel hotelID="H006">
+    <Name>Holiday Inn</Name>
+    <Rating>3.5</Rating>
+    <Phone>877-999-9999</Phone>
+    <Address>
+      <Number>250</Number>
+      <Street>E Van Buren</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85006</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel hotelID="H007">
+    <Name>Travelodge</Name>
+    <!-- Rating omitted -->
+    <Phone>623-555-1111</Phone>
+    <Address NearestAirport="Deer Valley">
+      <Number>333</Number>
+      <Street>N 27th Ave</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85029</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel hotelID="H008">
+    <Name>Best Western</Name>
+    <Rating>4.1</Rating>
+    <Phone>928-444-1234</Phone>
+    <Address>
+      <Number>101</Number>
+      <Street>Historic Rte 66</Street>
+      <City>Flagstaff</City>
+      <State>AZ</State>
+      <Zip>86001</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel hotelID="H009">
+    <Name>Desert Oasis</Name>
+    <!-- Omit rating -->
+    <Phone>480-777-9999</Phone>
+    <Phone>480-777-9998</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>777</Number>
+      <Street>E Greenway Pkwy</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85254</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel hotelID="H010">
+    <Name>Residence Inn</Name>
+    <Rating>3.9</Rating>
+    <Phone>480-541-1234</Phone>
+    <Address>
+      <Number>4800</Number>
+      <Street>N Rural Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85282</Zip>
+    </Address>
+  </Hotel>
 </Hotels>
