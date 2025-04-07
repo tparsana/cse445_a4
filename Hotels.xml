@@ -23,7 +23,7 @@
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-  <Hotel HotelID="H003">
+  <Hotel HotelID="H003" Rating="4.2">
     <Name>Marriott</Name>
     <Phone>602-555-0100</Phone>
     <Phone>602-555-0101</Phone>
@@ -57,7 +57,7 @@
       <Zip>85251</Zip>
     </Address>
   </Hotel>
-  <Hotel HotelID="H006">
+  <Hotel HotelID="H006" Rating="4.2">
     <Name>Best Western</Name>
     <Phone>480-555-0400</Phone>
     <Address>
@@ -102,7 +102,7 @@
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-  <Hotel HotelID="H010">
+  <Hotel HotelID="H010" Rating="4.2">
     <Name>La Quinta</Name>
     <Phone>480-555-0800</Phone>
     <Address>
