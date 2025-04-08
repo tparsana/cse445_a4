@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
-  <Hotel Rating="4.2">
-    <Name>Westin</Name>
+  <!-- 1) Has multiple phones, rating -->
+  <Hotel NearstAirport="Sky Harbor" Rating="4.2">
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearstAirport="Sky Harbor">
+    <Name>Westin</Name>
+    <Address>
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
@@ -12,11 +13,12 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-  
-  <Hotel Rating="3.8">
-    <Name>Hyatt Regency</Name>
+
+  <!-- 2) Single phone, rating 3.8 -->
+  <Hotel NearstAirport="Phoenix Sky Harbor" Rating="3.8">
     <Phone>480-123-4567</Phone>
-    <Address NearstAirport="Phoenix Sky Harbor">
+    <Name>Hyatt Regency</Name>
+    <Address>
       <Number>100</Number>
       <Street>Main St</Street>
       <City>Phoenix</City>
@@ -24,12 +26,13 @@
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-  
-  <Hotel Rating="4.2">
-    <Name>Marriott</Name>
+
+  <!-- 3) Multiple phones, rating 4.2 -->
+  <Hotel NearstAirport="Tucson Intl" Rating="4.2">
     <Phone>602-555-0100</Phone>
     <Phone>602-555-0101</Phone>
-    <Address NearstAirport="Tucson Intl">
+    <Name>Marriott</Name>
+    <Address>
       <Number>200</Number>
       <Street>Central Ave</Street>
       <City>Tucson</City>
@@ -37,11 +40,12 @@
       <Zip>85701</Zip>
     </Address>
   </Hotel>
-  
-  <Hotel Rating="4.5">
-    <Name>Hilton</Name>
+
+  <!-- 4) Single phone, rating 4.5 -->
+  <Hotel NearstAirport="Mesa Gateway" Rating="4.5">
     <Phone>480-555-0200</Phone>
-    <Address NearstAirport="Mesa Gateway">
+    <Name>Hilton</Name>
+    <Address>
       <Number>300</Number>
       <Street>Sunset Blvd</Street>
       <City>Mesa</City>
@@ -49,13 +53,84 @@
       <Zip>85201</Zip>
     </Address>
   </Hotel>
-  
-  <Hotel Rating="4.0">
-    <Name>Renaissance</Name>
+
+  <!-- 5) Single phone, rating 4.0 -->
+  <Hotel NearstAirport="Scottsdale Airport" Rating="4.0">
     <Phone>480-555-0300</Phone>
-    <Address NearstAirport="Scottsdale Airport">
+    <Name>Renaissance</Name>
+    <Address>
       <Number>400</Number>
       <Street>Broadway</Street>
       <City>Scottsdale</City>
       <State>AZ</State>
-      <Zip
+      <Zip>85251</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- 6) Single phone, rating 4.2 -->
+  <Hotel NearstAirport="Glendale Mun" Rating="4.2">
+    <Phone>480-555-0400</Phone>
+    <Name>Best Western</Name>
+    <Address>
+      <Number>500</Number>
+      <Street>Market St</Street>
+      <City>Glendale</City>
+      <State>AZ</State>
+      <Zip>85301</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- 7) Single phone, rating 3.5 -->
+  <Hotel NearstAirport="Phoenix Sky Harbor" Rating="3.5">
+    <Phone>480-555-0500</Phone>
+    <Name>Comfort Inn</Name>
+    <Address>
+      <Number>600</Number>
+      <Street>Lincoln St</Street>
+      <City>Chandler</City>
+      <State>AZ</State>
+      <Zip>85225</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- 8) Multiple phones, rating 4.1 -->
+  <Hotel NearstAirport="Phoenix Sky Harbor" Rating="4.1">
+    <Phone>480-555-0600</Phone>
+    <Phone>480-555-0601</Phone>
+    <Name>Holiday Inn</Name>
+    <Address>
+      <Number>700</Number>
+      <Street>Jefferson Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- 9) Single phone, rating 3.9 -->
+  <Hotel NearstAirport="Phoenix Sky Harbor" Rating="3.9">
+    <Phone>480-555-0700</Phone>
+    <Name>DoubleTree</Name>
+    <Address>
+      <Number>800</Number>
+      <Street>Washington Blvd</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- 10) Single phone, rating 4.2 -->
+  <Hotel NearstAirport="Tempe Municipal" Rating="4.2">
+    <Phone>480-555-0800</Phone>
+    <Name>La Quinta</Name>
+    <Address>
+      <Number>900</Number>
+      <Street>Grand Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+</Hotels>
