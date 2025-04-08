@@ -1,136 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
-  <!-- 1) Has multiple phones, rating -->
-  <Hotel NearstAirport="Sky Harbor" Rating="4.2">
+  <!-- Hotel #1: has multiple phones, rating present -->
+  <Hotel>
+    <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Name>Westin</Name>
-    <Address>
+    <Address NearstAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.2</Rating>
   </Hotel>
 
-  <!-- 2) Single phone, rating 3.8 -->
-  <Hotel NearstAirport="Phoenix Sky Harbor" Rating="3.8">
-    <Phone>480-123-4567</Phone>
+  <!-- Hotel #2: single phone, rating omitted (optional) -->
+  <Hotel>
     <Name>Hyatt Regency</Name>
-    <Address>
+    <Phone>480-123-4567</Phone>
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>100</Number>
       <Street>Main St</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
+    <!-- No <Rating> here to show optional usage -->
   </Hotel>
 
-  <!-- 3) Multiple phones, rating 4.2 -->
-  <Hotel NearstAirport="Tucson Intl" Rating="4.2">
+  <!-- Hotel #3: multiple phones, rating present -->
+  <Hotel>
+    <Name>Marriott</Name>
     <Phone>602-555-0100</Phone>
     <Phone>602-555-0101</Phone>
-    <Name>Marriott</Name>
-    <Address>
+    <Address NearstAirport="Tucson Intl">
       <Number>200</Number>
       <Street>Central Ave</Street>
       <City>Tucson</City>
       <State>AZ</State>
       <Zip>85701</Zip>
     </Address>
+    <Rating>4.2</Rating>
   </Hotel>
 
-  <!-- 4) Single phone, rating 4.5 -->
-  <Hotel NearstAirport="Mesa Gateway" Rating="4.5">
-    <Phone>480-555-0200</Phone>
+  <!-- Hotel #4: single phone, rating -->
+  <Hotel>
     <Name>Hilton</Name>
-    <Address>
+    <Phone>480-555-0200</Phone>
+    <Address NearstAirport="Mesa Gateway">
       <Number>300</Number>
       <Street>Sunset Blvd</Street>
       <City>Mesa</City>
       <State>AZ</State>
       <Zip>85201</Zip>
     </Address>
+    <Rating>4.5</Rating>
   </Hotel>
 
-  <!-- 5) Single phone, rating 4.0 -->
-  <Hotel NearstAirport="Scottsdale Airport" Rating="4.0">
-    <Phone>480-555-0300</Phone>
+  <!-- Hotel #5: single phone, rating 4.0 -->
+  <Hotel>
     <Name>Renaissance</Name>
-    <Address>
+    <Phone>480-555-0300</Phone>
+    <Address NearstAirport="Scottsdale Airport">
       <Number>400</Number>
       <Street>Broadway</Street>
       <City>Scottsdale</City>
       <State>AZ</State>
       <Zip>85251</Zip>
     </Address>
+    <Rating>4.0</Rating>
   </Hotel>
 
-  <!-- 6) Single phone, rating 4.2 -->
-  <Hotel NearstAirport="Glendale Mun" Rating="4.2">
-    <Phone>480-555-0400</Phone>
+  <!-- Hotel #6: single phone, rating 4.2 -->
+  <Hotel>
     <Name>Best Western</Name>
-    <Address>
+    <Phone>480-555-0400</Phone>
+    <Address NearstAirport="Glendale Mun">
       <Number>500</Number>
       <Street>Market St</Street>
       <City>Glendale</City>
       <State>AZ</State>
       <Zip>85301</Zip>
     </Address>
+    <Rating>4.2</Rating>
   </Hotel>
 
-  <!-- 7) Single phone, rating 3.5 -->
-  <Hotel NearstAirport="Phoenix Sky Harbor" Rating="3.5">
-    <Phone>480-555-0500</Phone>
+  <!-- Hotel #7: single phone, rating 3.5 -->
+  <Hotel>
     <Name>Comfort Inn</Name>
-    <Address>
+    <Phone>480-555-0500</Phone>
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>600</Number>
       <Street>Lincoln St</Street>
       <City>Chandler</City>
       <State>AZ</State>
       <Zip>85225</Zip>
     </Address>
+    <Rating>3.5</Rating>
   </Hotel>
 
-  <!-- 8) Multiple phones, rating 4.1 -->
-  <Hotel NearstAirport="Phoenix Sky Harbor" Rating="4.1">
+  <!-- Hotel #8: multiple phones, rating 4.1 -->
+  <Hotel>
+    <Name>Holiday Inn</Name>
     <Phone>480-555-0600</Phone>
     <Phone>480-555-0601</Phone>
-    <Name>Holiday Inn</Name>
-    <Address>
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>700</Number>
       <Street>Jefferson Ave</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.1</Rating>
   </Hotel>
 
-  <!-- 9) Single phone, rating 3.9 -->
-  <Hotel NearstAirport="Phoenix Sky Harbor" Rating="3.9">
-    <Phone>480-555-0700</Phone>
+  <!-- Hotel #9: single phone, rating 3.9 -->
+  <Hotel>
     <Name>DoubleTree</Name>
-    <Address>
+    <Phone>480-555-0700</Phone>
+    <Address NearstAirport="Phoenix Sky Harbor">
       <Number>800</Number>
       <Street>Washington Blvd</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
+    <Rating>3.9</Rating>
   </Hotel>
 
-  <!-- 10) Single phone, rating 4.2 -->
-  <Hotel NearstAirport="Tempe Municipal" Rating="4.2">
-    <Phone>480-555-0800</Phone>
+  <!-- Hotel #10: single phone, rating 4.2 -->
+  <Hotel>
     <Name>La Quinta</Name>
-    <Address>
+    <Phone>480-555-0800</Phone>
+    <Address NearstAirport="Tempe Municipal">
       <Number>900</Number>
       <Street>Grand Ave</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.2</Rating>
   </Hotel>
-
 </Hotels>
