@@ -9,27 +9,29 @@
             <xs:sequence>
               <!-- Hotel must have a Name element -->
               <xs:element name="Name" type="xs:string"/>
+              
               <!-- At least one Phone element is required; multiple allowed -->
               <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
-              <!-- Address element with its own child elements and an optional attribute -->
+              
+              <!-- Address element with required NearstAirport attribute -->
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="Number" type="xs:string"/>
+                    <!-- Number and Zip are now integer types -->
+                    <xs:element name="Number" type="xs:integer"/>
                     <xs:element name="Street" type="xs:string"/>
                     <xs:element name="City" type="xs:string"/>
                     <xs:element name="State" type="xs:string"/>
-                    <xs:element name="Zip" type="xs:string"/>
+                    <xs:element name="Zip" type="xs:integer"/>
                   </xs:sequence>
-                  <!-- Optional attribute for Address -->
-                  <xs:attribute name="NearstAirport" type="xs:string" use="optional"/>
+                  <!-- Required attribute for Address -->
+                  <xs:attribute name="NearstAirport" type="xs:string" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <!-- Optional attribute for Hotel -->
-            <xs:attribute name="Rating" type="xs:string" use="optional"/>
-            <!-- REQUIRED attribute added to force a validation error if missing -->
-            <xs:attribute name="HotelID" type="xs:string" use="required"/>
+            
+            <!-- Optional attribute for Hotel's rating, now decimal -->
+            <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>

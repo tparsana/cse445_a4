@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Hotels>
-  <Hotel HotelID="H001" Rating="4.2">
+  <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
@@ -12,7 +12,8 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-  <Hotel HotelID="H002" Rating="3.8">
+  
+  <Hotel Rating="3.8">
     <Name>Hyatt Regency</Name>
     <Phone>480-123-4567</Phone>
     <Address NearstAirport="Phoenix Sky Harbor">
@@ -23,11 +24,12 @@
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-  <Hotel HotelID="H003" Rating="4.2">
+  
+  <Hotel Rating="4.2">
     <Name>Marriott</Name>
     <Phone>602-555-0100</Phone>
     <Phone>602-555-0101</Phone>
-    <Address>
+    <Address NearstAirport="Tucson Intl">
       <Number>200</Number>
       <Street>Central Ave</Street>
       <City>Tucson</City>
@@ -35,7 +37,8 @@
       <Zip>85701</Zip>
     </Address>
   </Hotel>
-  <Hotel HotelID="H004" Rating="4.5">
+  
+  <Hotel Rating="4.5">
     <Name>Hilton</Name>
     <Phone>480-555-0200</Phone>
     <Address NearstAirport="Mesa Gateway">
@@ -46,7 +49,8 @@
       <Zip>85201</Zip>
     </Address>
   </Hotel>
-  <Hotel HotelID="H005" Rating="4.0">
+  
+  <Hotel Rating="4.0">
     <Name>Renaissance</Name>
     <Phone>480-555-0300</Phone>
     <Address NearstAirport="Scottsdale Airport">
@@ -54,63 +58,4 @@
       <Street>Broadway</Street>
       <City>Scottsdale</City>
       <State>AZ</State>
-      <Zip>85251</Zip>
-    </Address>
-  </Hotel>
-  <Hotel HotelID="H006" Rating="4.2">
-    <Name>Best Western</Name>
-    <Phone>480-555-0400</Phone>
-    <Address>
-      <Number>500</Number>
-      <Street>Market St</Street>
-      <City>Glendale</City>
-      <State>AZ</State>
-      <Zip>85301</Zip>
-    </Address>
-  </Hotel>
-  <Hotel HotelID="H007" Rating="3.5">
-    <Name>Comfort Inn</Name>
-    <Phone>480-555-0500</Phone>
-    <Address NearstAirport="Phoenix Sky Harbor">
-      <Number>600</Number>
-      <Street>Lincoln St</Street>
-      <City>Chandler</City>
-      <State>AZ</State>
-      <Zip>85225</Zip>
-    </Address>
-  </Hotel>
-  <Hotel HotelID="H008" Rating="4.1">
-    <Name>Holiday Inn</Name>
-    <Phone>480-555-0600</Phone>
-    <Phone>480-555-0601</Phone>
-    <Address NearstAirport="Phoenix Sky Harbor">
-      <Number>700</Number>
-      <Street>Jefferson Ave</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
-  <Hotel HotelID="H009" Rating="3.9">
-    <Name>DoubleTree</Name>
-    <Phone>480-555-0700</Phone>
-    <Address NearstAirport="Phoenix Sky Harbor">
-      <Number>800</Number>
-      <Street>Washington Blvd</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85004</Zip>
-    </Address>
-  </Hotel>
-  <Hotel HotelID="H010" Rating="4.2">
-    <Name>La Quinta</Name>
-    <Phone>480-555-0800</Phone>
-    <Address>
-      <Number>900</Number>
-      <Street>Grand Ave</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-  </Hotel>
-</Hotels>
+      <Zip
